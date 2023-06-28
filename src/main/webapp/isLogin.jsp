@@ -10,7 +10,7 @@
 	<%
 		String name = request.getParameter("uname");
 		String pass = request.getParameter("password");
-		if(name.toLowerCase().equals("gopal") && pass.toLowerCase().equals("12345")){
+		if(name.equals("gopal") && pass.equals("12345")){
 			response.sendRedirect("welcome.jsp");
 		}else{
 			response.sendRedirect("errorPage.jsp");
